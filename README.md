@@ -14,4 +14,4 @@
 ## Run project
 
 - Run project `php artisan serve`
-- Navigate to http://localhost:8000
+- Navigate to http://localhost:8000/users
