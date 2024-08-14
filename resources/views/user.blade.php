@@ -24,27 +24,27 @@
                     <div class="row">
                         <div class="mb-3 col-12">
                             <label class="form-label" for="id">Id</label>
-                            <input id="id" name="id" class="form-control form-control-sm" value="{{old('id')}}" type="number" />
+                            <input id="id" name="id" class="form-control form-control-sm" value="{{old('id', $user->id)}}" type="number" />
                             @error('id')<span class="text-danger">{{$message}}</span>@enderror
                         </div>
                         <div class="mb-3 col-12">
                             <label class="form-label" for="name">Name</label>
-                            <input id="name" name="name" class="form-control form-control-sm" value="{{old('name')}}" />
+                            <input id="name" name="name" class="form-control form-control-sm" value="{{old('name', $user->name)}}" />
                             @error('name')<span class="text-danger">{{$message}}</span>@enderror
                         </div>
                         <div class="mb-3 col-12">
                             <label class="form-label" for="email">Email</label>
-                            <input id="email" name="email" class="form-control form-control-sm" value="{{old('email')}}" />
+                            <input id="email" name="email" class="form-control form-control-sm" value="{{old('email', $user->email)}}" />
                             @error('email')<span class="text-danger">{{$message}}</span>@enderror
                         </div>
                         <div class="mb-3 col-12">
                             <label class="form-label" for="age">Age</label>
-                            <input id="age" name="age" class="form-control form-control-sm" value="{{old('age')}}" />
+                            <input id="age" name="age" class="form-control form-control-sm" value="{{old('age', $user->age)}}" />
                             @error('age')<span class="text-danger">{{$message}}</span>@enderror
                         </div>
                         <div class="mb-3 col-12">
                             <label class="form-label" for="birth_date">Birth Date</label>
-                            <input id="birth_date" name="birth_date" class="form-control form-control-sm" value="{{old('birth_date')}}" />
+                            <input id="birth_date" name="birth_date" class="form-control form-control-sm" value="{{old('birth_date', $user->birth_date)}}" />
                             @error('birth_date')<span class="text-danger">{{$message}}</span>@enderror
                         </div>
                         <div class="col-12">
